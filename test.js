@@ -27,7 +27,7 @@ class Ingredient {
 class Bolognese extends Dish {
     constructor() {
         super(10, [new Ingredient('spaghetti', 1),
-                                       new Ingredient('tomato', 2)]);
+                   new Ingredient('tomato', 2)]);
 
     }
 }
@@ -50,7 +50,7 @@ class Steak extends Dish {
 class SteakAndFries extends Dish {
     constructor() {
         super(13, [new Ingredient('potato', 2),
-                                       new Ingredient('meat', 1)]);
+                   new Ingredient('meat', 1)]);
     }
 }
 
