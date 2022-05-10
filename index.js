@@ -1,6 +1,6 @@
 const boxContainer = document.getElementsByClassName('box-container')[0];
 
-const colors = ['purple', 'red', 'orange', 'green', 'pink', 'black', 'yellow', 'sky', 'blue'];
+const colors = ['purple', 'red', 'orange', 'green', 'pink', 'black', 'yellow', 'blue'];
 let currentBoxId = 1;
 let leftKeyPressed = false;
 let currentTarget;
@@ -40,6 +40,7 @@ document.addEventListener('contextmenu', (e) => {
         let box = e.target;
         console.log('right click', box.style.backgroundColor);
         let changedColor = colors[~~(Math.random() * colors.length)];
+        console.log(changedColor, box.style.backgroundColor);
         while (changedColor === box.style.backgroundColor) {
             changedColor = colors[~~(Math.random() * colors.length)];
         }
